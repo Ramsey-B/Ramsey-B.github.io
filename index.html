@@ -13,6 +13,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
     <!--main css-->
     <link rel="stylesheet" href="assests/styles/main.css">
 </head>
@@ -20,51 +23,78 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3">
+            <div class="col-12">
+                <nav class="container-fluid navbar bg-light fixed-top">
+                    <div class="row">
+                        <!--nav bar-->
+                        <div class="col-6 text-center d-flex flex-row ">
+                            <h4 class="mr-3">Home</h4>
+                            <h4 class="mr-3">About</h4>
+                            <h4 class="mr-3">Resume</h4>
+                            <h4 class="mr-3">Projects</h4>
+                            <h4 class="mr-3">Education</h4>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-12 side-bar">
                 <!--side bar stuff-->
                 <div class="row">
                     <!--profile stuff-->
-                    <div class="col">
+                    <div class="col text-center">
                         <img src="assests/pics/pro-pic.jpg" class="pro-pic">
                         <h3>Ramsey Bland</h3>
                         <h4>509-592-0028</h4>
                         <h4>ramsey.bland@gmail.com</h4>
                         <h4>ramsey-b.github.io</h4>
                     </div>
-                </div>
-                <div class="row">
-                    <!--skills-->
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                </div>
-            </div>
-            <div class="col-9">
-                <!--main content body-->
-                <header class="container-fluid">
-                    <div class="row">
-                        <!--nav bar-->
-                        <div class="col-10 offset-2 d-flex flex-row">
-                            <h4 class="mr-3">Home</h4>
-                            <h4 class="mr-3">Resume</h4>
-                            <h4 class="mr-3">Projects</h4>
-                            <h4 class="mr-3">Education</h4>
+                    <div class="col text-center skills d-none d-md-block">
+                        <h3>Skills</h3>
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
+                            <div class="col-6">
+                                <img src="assests/pics/html.png" alt="" class="skill-logo">
+                            </div>
                         </div>
                     </div>
-                </header>
+                </div>
+            </div>
+            <div class="col-md-9 col-xs-12">
+                <!--main content body-->
                 <section class="container-fluid">
                     <div class="row">
                         <!--about-->
                         <div class="col">
                             <!--carousel-->
-                            <div id="myCarousel" class="carousel slide carousel-gallery" data-ride="carousel">
+                            <div id="myCarousel" class="carousel slide carousel-gallery text-center" data-ride="carousel">
                                 <ul class="carousel-indicators">
                                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -72,33 +102,24 @@
                                 </ul>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="assets/pics/guitar-1.jfif" alt="Los Angeles" class="img-carousel">
+                                        <img src="assests/pics/developer.jfif" alt="" class="img-carousel" height="350vh" width="100%">
                                         <div class="carousel-caption">
-                                            <h3>Guitars</h3>
-                                            <p>The Worlds most iconuc guitars!
-                                                <br>
-                                                <button class="btn btn-primary">Learn more</button>
-                                            </p>
+                                            <h1>Ramsey Bland</h1>
+                                            <button type="button" class="btn btn-info btn-">Learn more</button>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/pics/bass-1.jfif" alt="Chicago" class="img-carousel">
+                                        <img src="assests/pics/coding-screen.PNG" alt="" class="img-carousel" height="350vh" width="100%">
                                         <div class="carousel-caption">
-                                            <h3>Bass Guitars</h3>
-                                            <p>Basses to rock the house!
-                                                <br>
-                                                <button class="btn btn-primary">Learn more</button>
-                                            </p>
+                                            <h2>Developer</h2>
+                                            <button type="button" class="btn btn-info btn-arrow-right">Learn more</button>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/pics/amp-1.jfif" alt="New York" class='img-carousel'>
+                                        <img src="assests/pics/amp-2.jfif" alt="" class='img-carousel' height="350vh" width="100%">
                                         <div class="carousel-caption">
-                                            <h3>Amps</h3>
-                                            <p>Amps for that perfect tone!
-                                                <br>
-                                                <button class="btn btn-primary">Learn more</button>
-                                            </p>
+                                            <h2>Musician</h2>
+                                            <button type="button" class="btn btn-info btn-arrow-right">Learn more</button>
                                         </div>
                                     </div>
                                 </div>
@@ -110,43 +131,95 @@
                                 </a>
                             </div>
                         </div>
-
+                        <div class="row">
+                            <div class="col mt-4">
+                                <h2 class="text-center">About</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo perspiciatis fugiat
+                                    qui id aspernatur omnis suscipit dolor ipsam repellat molestias quasi tempora impedit
+                                    libero aliquam sapiente, a harum. Nisi!</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <!--projects-->
                         <div class="col">
                             <div class="row">
                                 <div class="col text-center">
-                                    <h3>Projects</h3>
+                                    <h2>Projects</h2>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-4 mt-2">
-                                    <img src="//placehold.it/200x150" alt="">
+                                <div class="col-md-4 col-xs-12 text-center mt-2">
+                                    <img src="assests/pics/kingsman-screenshot.PNG" alt="" class="project-img" width="350vh">
                                 </div>
-                                <div class="col-4 mt-2">
-                                    <img src="//placehold.it/200x150" alt="">
+                                <div class="col-md-4 col-xs-12 text-center mt-2">
+                                    <img src="assests/pics/kingsman-screenshot.PNG" alt="" class="project-img" width="350vh">
                                 </div>
-                                <div class="col-4 mt-2">
-                                    <img src="//placehold.it/200x150" alt="">
+                                <div class="col-md-4 col-xs-12 text-center mt-2">
+                                    <img src="assests/pics/kingsman-screenshot.PNG" alt="" class="project-img" width="350vh">
                                 </div>
-                                <div class="col-4 mt-5">
-                                    <img src="//placehold.it/200x150" alt="">
+                                <div class="col-md-4 col-xs-12 text-center mt-5">
+                                    <img src="assests/pics/kingsman-screenshot.PNG" alt="" class="project-img" width="350vh">
                                 </div>
-                                <div class="col-4 mt-5">
-                                    <img src="//placehold.it/200x150" alt="">
+                                <div class="col-md-4 col-xs-12 text-center mt-5">
+                                    <img src="assests/pics/kingsman-screenshot.PNG" alt="" class="project-img" width="350vh">
                                 </div>
-                                <div class="col-4 mt-5">
-                                    <img src="//placehold.it/200x150" alt="">
+                                <div class="col-md-4 col-xs-12 text-center mt-5">
+                                    <img src="assests/pics/kingsman-screenshot.PNG" alt="" class="project-img" width="350vh">
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-4">
                             <!--edu/exp-->
-                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <h4 class="text-center">Education</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo, sapiente voluptatem
+                                    itaque molestiae quod similique totam. Voluptas mollitia distinctio, ea, nesciunt iste
+                                    quam deleniti ut, nemo reprehenderit debitis molestias.</p>
+                            </div>
                             <!--edu-->
-                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <h4 class="text-center">Experience</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolorem nihil quidem? Voluptas
+                                    voluptatibus provident corporis sunt aliquid culpa, consectetur a, voluptate est eos
+                                    alias quae facere quas? Accusamus, consectetur!</p>
+                            </div>
                             <!--exp-->
+                            <div class="col text-center skills d-block d-sm-block d-md-none">
+                                    <h3>Skills</h3>
+                                    <div class="row text-center">
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                 </section>
                 <footer class="container-fluid">
@@ -160,8 +233,9 @@
                 </div>
             </div>
         </div>
-        <!--javascript files-->
-        <script src="assests/js files/main.js"></script>
+    </div>
+    <!--javascript files-->
+    <script src="assests/js files/main.js"></script>
 </body>
 
 </html>

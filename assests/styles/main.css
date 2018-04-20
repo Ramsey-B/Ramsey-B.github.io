@@ -1,5 +1,26 @@
 .pro-pic {
-    width: 10vh;
-    height: 10vh;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
+    margin-top: 7vh;
+}
+
+.project-img {
+    width: 35vh;
+}
+
+.carousel-gallery {
+    margin-top: 7vh;
+}
+
+.skill-logo {
+    widows: 10vh;
+    height: 10vh;
+}
+
+.skills * {
+    margin-top: 1vh;
+}
+.side-bar {
+    
 }

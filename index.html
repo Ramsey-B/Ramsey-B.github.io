@@ -1,64 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ramsey Bland</title>
     <!--bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- carousel links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <!--main css-->
     <link rel="stylesheet" href="assests/styles/main.css">
 </head>
-<body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-6">
-                <img src="assests/pics/pro-pic.jpg" class="pro-pic">
-                <h3>Ramsey Bland</h3>
-                <h4>509-592-0028</h4>
-                <h4>ramsey.bland@gmail.com</h4>
-                <h4>ramsey-b.github.io</h4>
-            </div>
-            <div class="col-6"></div>
-        </div>
-    </header>
-    <section class="container">
-        <div class="row"> <!--about-->
-            <div class="col"></div><!--carousel-->
-        </div>
-        <div class="row"> <!--projects-->
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-        </div>
-        <div class="row"><!--skills-->
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-        </div>
-        <div class="row"><!--edu/exp-->
-            <div class="col-6"></div><!--edu-->
-            <div class="col-6"></div><!--exp-->
-        </div>
-    </section>
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-6"></div><!--social-->
-            <div class="col-6"></div><!--contacts-->
-        </div>
-    </footer>
 
-    <!--javascript files-->
-    <script src="assests/js files/main.js"></script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <!--side bar stuff-->
+                <div class="row">
+                    <!--profile stuff-->
+                    <div class="col">
+                        <img src="assests/pics/pro-pic.jpg" class="pro-pic">
+                        <h3>Ramsey Bland</h3>
+                        <h4>509-592-0028</h4>
+                        <h4>ramsey.bland@gmail.com</h4>
+                        <h4>ramsey-b.github.io</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--skills-->
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
+            <div class="col-9">
+                <!--main content body-->
+                <header class="container-fluid">
+                    <div class="row">
+                        <!--nav bar-->
+                        <div class="col-10 offset-2 d-flex flex-row">
+                            <h4 class="mr-3">Home</h4>
+                            <h4 class="mr-3">Resume</h4>
+                            <h4 class="mr-3">Projects</h4>
+                            <h4 class="mr-3">Education</h4>
+                        </div>
+                    </div>
+                </header>
+                <section class="container-fluid">
+                    <div class="row">
+                        <!--about-->
+                        <div class="col">
+                            <!--carousel-->
+                            <div id="myCarousel" class="carousel slide carousel-gallery" data-ride="carousel">
+                                <ul class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/pics/guitar-1.jfif" alt="Los Angeles" class="img-carousel">
+                                        <div class="carousel-caption">
+                                            <h3>Guitars</h3>
+                                            <p>The Worlds most iconuc guitars!
+                                                <br>
+                                                <button class="btn btn-primary">Learn more</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/pics/bass-1.jfif" alt="Chicago" class="img-carousel">
+                                        <div class="carousel-caption">
+                                            <h3>Bass Guitars</h3>
+                                            <p>Basses to rock the house!
+                                                <br>
+                                                <button class="btn btn-primary">Learn more</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/pics/amp-1.jfif" alt="New York" class='img-carousel'>
+                                        <div class="carousel-caption">
+                                            <h3>Amps</h3>
+                                            <p>Amps for that perfect tone!
+                                                <br>
+                                                <button class="btn btn-primary">Learn more</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <!--projects-->
+                        <div class="col">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h3>Projects</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 mt-2">
+                                    <img src="//placehold.it/200x150" alt="">
+                                </div>
+                                <div class="col-4 mt-2">
+                                    <img src="//placehold.it/200x150" alt="">
+                                </div>
+                                <div class="col-4 mt-2">
+                                    <img src="//placehold.it/200x150" alt="">
+                                </div>
+                                <div class="col-4 mt-5">
+                                    <img src="//placehold.it/200x150" alt="">
+                                </div>
+                                <div class="col-4 mt-5">
+                                    <img src="//placehold.it/200x150" alt="">
+                                </div>
+                                <div class="col-4 mt-5">
+                                    <img src="//placehold.it/200x150" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--edu/exp-->
+                            <div class="col-6"></div>
+                            <!--edu-->
+                            <div class="col-6"></div>
+                            <!--exp-->
+                        </div>
+                </section>
+                <footer class="container-fluid">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <!--social-->
+                        <div class="col-6"></div>
+                        <!--contacts-->
+                    </div>
+                </footer>
+                </div>
+            </div>
+        </div>
+        <!--javascript files-->
+        <script src="assests/js files/main.js"></script>
 </body>
+
 </html>

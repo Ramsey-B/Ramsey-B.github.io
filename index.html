@@ -22,26 +22,58 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <!--full screen navbar-->
+        <div class="row d-none d-md-block">
             <div class="col-12">
                 <nav class="container-fluid navbar bg-light fixed-top">
                     <div class="row">
                         <!--nav bar-->
-                        <div class="col-6 text-center d-flex flex-row ">
+                        <div class="col-md-6 offset-md-6 col-xs-12 d-flex flex-row ">
                             <h4 class="mr-3">Home</h4>
-                            <h4 class="mr-3">About</h4>
                             <h4 class="mr-3">Resume</h4>
-                            <h4 class="mr-3">Projects</h4>
-                            <h4 class="mr-3">Education</h4>
+                            <h4 class="mr-3">
+                                <a href="#about">About</a>
+                            </h4>
+                            <h4 class="mr-3">
+                                <a href="#projects">Projects</a>
+                            </h4>
+                            <h4 class="mr-3">
+                                <a href="#education">Education</a>
+                            </h4>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
+        <!--small screen navbar-->
+        <div class="row d-sm-block d-md-none">
+            <div class="col-12">
+                <div class="container-fluid navbar bg-light fixed-top">
+                    <div class="row">
+                        <div class="col-8 d-flex flex-row">
+                            <h4 class="mr-3">Home</h4>
+                            <h4 class="mr-3">Resume</h4>
+                        </div>
+                        <div class="col-4 d-block">
+                            <div class="btn-group d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <button class="dropdown-item" type="button"><a href="#about">About</a></button>
+                                    <button class="dropdown-item" type="button"><a href="#projects">Projects</a></button>
+                                    <button class="dropdown-item" type="button"><a href="#education">Education</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-3 col-xs-12 side-bar">
                 <!--side bar stuff-->
-                <div class="row">
+                <div class="row mt-4">
                     <!--profile stuff-->
                     <div class="col text-center">
                         <img src="assests/pics/pro-pic.jpg" class="pro-pic">
@@ -90,8 +122,7 @@
             <div class="col-md-9 col-xs-12">
                 <!--main content body-->
                 <section class="container-fluid">
-                    <div class="row">
-                        <!--about-->
+                    <div class="row mt-4">
                         <div class="col">
                             <!--carousel-->
                             <div id="myCarousel" class="carousel slide carousel-gallery text-center" data-ride="carousel">
@@ -133,7 +164,7 @@
                         </div>
                         <div class="row">
                             <div class="col mt-4">
-                                <h2 class="text-center">About</h2>
+                                <h2 class="text-center" id="about">About</h2>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo perspiciatis fugiat
                                     qui id aspernatur omnis suscipit dolor ipsam repellat molestias quasi tempora impedit
                                     libero aliquam sapiente, a harum. Nisi!</p>
@@ -145,7 +176,7 @@
                         <div class="col">
                             <div class="row">
                                 <div class="col text-center">
-                                    <h2>Projects</h2>
+                                    <h2 id="projects">Projects</h2>
                                 </div>
                             </div>
                             <div class="row">
@@ -169,7 +200,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-4" id="education">
                             <!--edu/exp-->
                             <div class="col-6">
                                 <h4 class="text-center">Education</h4>
@@ -186,40 +217,40 @@
                             </div>
                             <!--exp-->
                             <div class="col text-center skills d-block d-sm-block d-md-none">
-                                    <h3>Skills</h3>
-                                    <div class="row text-center">
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                        </div>
+                                <h3>Skills</h3>
+                                <div class="row text-center">
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
                                     </div>
                                 </div>
+                            </div>
                         </div>
                 </section>
                 <footer class="container-fluid">

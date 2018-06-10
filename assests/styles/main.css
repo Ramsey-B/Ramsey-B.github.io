@@ -21,3 +21,30 @@
 .skills * {
     margin-top: 1vh;
 }
+
+#github {
+    font-size: 5vh;
+    margin: 1vh;
+}
+
+#linkedin {
+    font-size: 5vh;
+    margin: 1vh;
+}
+
+#jumbotron {
+    background-image: url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&s=61ead6562974b58aeaf66646026a1f0f&auto=format&fit=crop&w=1050&q=80');
+    height: 50vh
+}
+
+.about {
+    background: rgb(255, 55, 55);
+    color: white;
+    height: 50vh;
+    padding: 10vh;
+}
+
+#about {
+    display: inline-block;
+    border-bottom: 3px solid;
+}

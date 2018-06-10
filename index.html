@@ -25,23 +25,18 @@
         <!--full screen navbar-->
         <div class="row d-none d-md-block">
             <div class="col-12">
-                <nav class="container-fluid navbar bg-light fixed-top">
-                    <div class="row">
-                        <!--nav bar-->
-                        <div class="col-md-6 offset-md-6 col-xs-12 d-flex flex-row ">
-                            <h4 class="mr-3">Home</h4>
-                            <h4 class="mr-3">Resume</h4>
-                            <h4 class="mr-3">
-                                <a href="#about">About</a>
-                            </h4>
-                            <h4 class="mr-3">
-                                <a href="#projects">Projects</a>
-                            </h4>
-                            <h4 class="mr-3">
-                                <a href="#education">Education</a>
-                            </h4>
-                        </div>
-                    </div>
+                <nav class="container-fluid navbar bg-light fixed-top d-flex justify-content-center">
+                    <h4 class="mr-3">Home</h4>
+                    <h4 class="mr-3">Resume</h4>
+                    <h4 class="mr-3">
+                        <a href="#about">About</a>
+                    </h4>
+                    <h4 class="mr-3">
+                        <a href="#projects">Projects</a>
+                    </h4>
+                    <h4 class="mr-3">
+                        <a href="#education">Education</a>
+                    </h4>
                 </nav>
             </div>
         </div>
@@ -54,15 +49,21 @@
                             <h4 class="mr-3">Home</h4>
                             <h4 class="mr-3">Resume</h4>
                         </div>
-                        <div class="col-4 d-block">
-                            <div class="btn-group d-flex justify-content-end">
+                        <div class="col-4">
+                            <div class="btn-group">
                                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-bars"></i>
+                                    <i class="fas fa-bars"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <button class="dropdown-item" type="button"><a href="#about">About</a></button>
-                                    <button class="dropdown-item" type="button"><a href="#projects">Projects</a></button>
-                                    <button class="dropdown-item" type="button"><a href="#education">Education</a></button>
+                                    <button class="dropdown-item" type="button">
+                                        <a href="#about">About</a>
+                                    </button>
+                                    <button class="dropdown-item" type="button">
+                                        <a href="#projects">Projects</a>
+                                    </button>
+                                    <button class="dropdown-item" type="button">
+                                        <a href="#education">Education</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -78,43 +79,23 @@
                     <div class="col text-center">
                         <img src="assests/pics/pro-pic.jpg" class="pro-pic">
                         <h3>Ramsey Bland</h3>
-                        <h4>509-592-0028</h4>
+                        <h4>(509) 592-0028</h4>
                         <h4>ramsey.bland@gmail.com</h4>
-                        <h4>ramsey-b.github.io</h4>
+                        <a href="https://ramsey-b.github.io/">
+                            <i class="fab fa-github-square" id="github" style="color: black;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramsey-b/">
+                            <i class="fab fa-linkedin" id="linkedin" style="#0077B5"></i>
+                        </a>
                     </div>
                     <div class="col text-center skills d-none d-md-block">
-                        <h3>Skills</h3>
-                        <div class="row text-center">
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
-                            <div class="col-6">
-                                <img src="assests/pics/html.png" alt="" class="skill-logo">
-                            </div>
+                        <h3>Languages</h3>
+                        <div class="row" id="languages">
+
+                        </div>
+                        <h3>Frameworks</h3>
+                        <div class="row" id="frameworks">
+
                         </div>
                     </div>
                 </div>
@@ -125,49 +106,24 @@
                     <div class="row mt-4">
                         <div class="col">
                             <!--carousel-->
-                            <div id="myCarousel" class="carousel slide carousel-gallery text-center" data-ride="carousel">
-                                <ul class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                </ul>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="assests/pics/developer.jfif" alt="" class="img-carousel" height="350vh" width="100%">
-                                        <div class="carousel-caption">
-                                            <h1>Ramsey Bland</h1>
-                                            <button type="button" class="btn btn-info btn-">Learn more</button>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assests/pics/coding-screen.PNG" alt="" class="img-carousel" height="350vh" width="100%">
-                                        <div class="carousel-caption">
-                                            <h2>Developer</h2>
-                                            <button type="button" class="btn btn-info btn-arrow-right">Learn more</button>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assests/pics/amp-2.jfif" alt="" class='img-carousel' height="350vh" width="100%">
-                                        <div class="carousel-caption">
-                                            <h2>Musician</h2>
-                                            <button type="button" class="btn btn-info btn-arrow-right">Learn more</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </a>
+                            <div class="jumbotron d-flex align-items-center flex-column" id="jumbotron">
+                                <h1 class="display-4 text-center jumbo-text" style="color: white">Software Developer</h1>
+                                <p class="lead text-center mt-4">
+                                    <a class="btn btn-outline-primary btn-lg" href="#about" role="button">Learn more</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col mt-4">
+                        <div class="row about d-flex align-items-center">
+                            <div class="col mt-4 text-center">
                                 <h2 class="text-center" id="about">About</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo perspiciatis fugiat
-                                    qui id aspernatur omnis suscipit dolor ipsam repellat molestias quasi tempora impedit
-                                    libero aliquam sapiente, a harum. Nisi!</p>
+                                <p>Ramsey started learning programming on his own utilizing free resources. He found that he
+                                    enjoyed development but wanted to expand his knowledge.</p>
+                                <p>That desire to learn lead him to Boise CodeWorks immersive full-stack course, where he has
+                                    learned to develop both front-end and back-end web apps. He's also learned about utilizing
+                                    scrum methods to improve team dynamics and effiency.</p>
+                                <p>In his freetime, Ramsey likes to play guitar, play video games, ski, and take his dogs on
+                                    adventures.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -204,51 +160,33 @@
                             <!--edu/exp-->
                             <div class="col-6">
                                 <h4 class="text-center">Education</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo, sapiente voluptatem
-                                    itaque molestiae quod similique totam. Voluptas mollitia distinctio, ea, nesciunt iste
-                                    quam deleniti ut, nemo reprehenderit debitis molestias.</p>
+                                <p>
+                                    <strong>
+                                        <em>Boise CodeWorks</em>
+                                    </strong> - april 2018 to present</p>
+                                <p>
+                                    <strong>
+                                        <em>Utah State</em>
+                                    </strong> - expected graduation 2020</p>
                             </div>
                             <!--edu-->
                             <div class="col-6">
-                                <h4 class="text-center">Experience</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolorem nihil quidem? Voluptas
-                                    voluptatibus provident corporis sunt aliquid culpa, consectetur a, voluptate est eos
-                                    alias quae facere quas? Accusamus, consectetur!</p>
+                                <h4 class="text-center">Skills</h4>
+                                <ul>
+                                    <li>Building servers with Node.js and persisting data to databases</li>
+                                    <li>Data protection using encapsulation and password encryption</li>
+                                    <li>Front-end development utilizing Javascript and frameworks like Vue.js</li>
+                                </ul>
                             </div>
                             <!--exp-->
                             <div class="col text-center skills d-block d-sm-block d-md-none">
-                                <h3>Skills</h3>
-                                <div class="row text-center">
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="assests/pics/html.png" alt="" class="skill-logo">
-                                    </div>
+                                <h3>Languages</h3>
+                                <div class="row text-center" id="small-languages">
+
+                                </div>
+                                <h3>Frameworks</h3>
+                                <div class="row text-center" id="small-frameworks">
+
                                 </div>
                             </div>
                         </div>
@@ -266,7 +204,9 @@
         </div>
     </div>
     <!--javascript files-->
-    <script src="assests/js files/main.js"></script>
+    <script src="assests/apps/service.js"></script>
+    <script src="assests/apps/controller.js"></script>
+    <script src="assests/apps/app.js"></script>
 </body>
 
 </html>

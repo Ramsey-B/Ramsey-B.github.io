@@ -38,7 +38,7 @@
 }
 
 .about {
-    background: rgb(255, 55, 55);
+    background: #E44424;
     color: white;
     height: 50vh;
     padding: 10vh;
@@ -47,4 +47,27 @@
 #about {
     display: inline-block;
     border-bottom: 3px solid;
+}
+
+.projects {
+    background: #67BCDB;
+    color: black;
+    min-height: 50vh;
+    padding: 10vh;
+}
+
+.pro-screen {
+    overflow: auto;
+    margin: 2vh;
+    width: 300vh
+}
+
+#projects {
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+
+.side-bar {
+    background: rgb(107, 107, 245);
+    color: white;
 }

@@ -100,3 +100,13 @@ a {
     border: 1px solid;
     box-shadow: 5px 10px #4b4b52;
 }
+
+.footer {
+    background: #E44424;
+    color: white;
+    max-height: 110vh;
+    margin-left: 2px;
+    position:relative;
+    border: 1px solid;
+    box-shadow: 5px 10px #4b4b52;
+}

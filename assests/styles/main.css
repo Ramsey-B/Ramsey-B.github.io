@@ -9,16 +9,12 @@
     width: 35vh;
 }
 
-.carousel-gallery {
-    margin-top: 7vh;
-}
-
 .skill-logo {
-    widows: 10vh;
-    height: 10vh;
+    height: 8vh;
+    margin: 1vh;
 }
 
-.skills * {
+.skills {
     margin-top: 1vh;
 }
 
@@ -42,6 +38,9 @@
     color: white;
     min-height: 50vh;
     padding: 10vh;
+    position:relative;
+    border: 1px solid;
+    box-shadow: 5px 10px #4b4b52;
 }
 
 #about {
@@ -50,9 +49,13 @@
 }
 
 .projects {
-    background: #67BCDB;
-    color: black;
+    background: #E44424;
+    color: white;
     min-height: 50vh;
+    padding: 10vh;
+    position:relative;
+    border: 1px solid;
+    box-shadow: 5px 10px #4b4b52;
 }
 
 .pro-screen {
@@ -64,4 +67,36 @@
 #projects {
     display: inline-block;
     border-bottom: 3px solid;
+}
+.top-bar {
+    background: #E44424;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.side-bar {
+    background: #E44424;
+    color: white;
+    max-height: 110vh;
+    margin-left: 2px;
+    position:relative;
+    border: 1px solid;
+    box-shadow: 5px 10px #4b4b52;
+}
+#languages {
+    margin: 2vh;
+}
+
+#frameworks {
+    margin: 2vh;
+}
+
+.gallery {
+    margin: 4vh;
+    position:relative;
+    border: 1px solid;
+    box-shadow: 5px 10px #4b4b52;
 }

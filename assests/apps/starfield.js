@@ -15,7 +15,8 @@ Starfield.prototype.initialise = function (div) {
   //	Store the div.
   this.containerDiv = div;
   self.width = $(document).width()
-  self.height = $(document).height()
+  debugger
+  self.height = $('footer').position().top
 
   window.addEventListener('resize', function resize(event) {
     self.width = $(document).width()

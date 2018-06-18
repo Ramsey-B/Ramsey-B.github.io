@@ -40,7 +40,6 @@
     padding: 10vh;
     position:relative;
     border: 1px solid;
-    box-shadow: 5px 10px #4b4b52;
 }
 
 #about {
@@ -52,16 +51,14 @@
     background: #E44424;
     color: white;
     min-height: 50vh;
-    padding: 10vh;
+    padding: 2vh;
     position:relative;
     border: 1px solid;
-    box-shadow: 5px 10px #4b4b52;
 }
 
 .pro-screen {
-    overflow: auto;
-    margin: 1vh;
-    width: 300vh
+   margin: 1vh 0;
+   width: 100vh
 }
 
 #projects {
@@ -84,7 +81,6 @@ a {
     margin-left: 2px;
     position:relative;
     border: 1px solid;
-    box-shadow: 5px 10px #4b4b52;
 }
 #languages {
     margin: 2vh;
@@ -98,7 +94,6 @@ a {
     margin: 4vh;
     position:relative;
     border: 1px solid;
-    box-shadow: 5px 10px #4b4b52;
 }
 
 .footer {
@@ -108,7 +103,6 @@ a {
     margin-left: 2px;
     position:relative;
     border: 1px solid;
-    box-shadow: 5px 10px #4b4b52;
 }
 
 .container {
@@ -155,7 +149,6 @@ a {
 .current {
     position:relative;
     border: 1px solid;
-    box-shadow: 5px 10px #4b4b52;
     background: white;
 }
 

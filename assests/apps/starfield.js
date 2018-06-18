@@ -14,14 +14,14 @@ Starfield.prototype.initialise = function (div) {
   var self = this;
   //	Store the div.
   this.containerDiv = div;
-  self.width = document.documentElement.scrollWidth;
-  self.height = document.documentElement.scrollHeight;
+  self.width = $(document).width()
+  self.height = $(document).height()
 
   window.addEventListener('resize', function resize(event) {
-    self.width = document.documentElement.scrollWidth;
-    self.height = window.innerHeight;
+    self.width = $(document).width()
+    self.height = $(document).height()
     self.canvas.width = self.width;
-    self.canvas.height = document.documentElement.scrollHeight;
+    self.canvas.height = self.width;
     self.draw();
   });
 

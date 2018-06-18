@@ -13,6 +13,6 @@ function Service() {
   var container = document.getElementById('page');
   var starfield = new Starfield();
   starfield.initialise(container);
-  starfield.stars = 200;
+  starfield.stars = 400;
   starfield.start();
 }

@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -30,18 +29,18 @@
         <div class="row d-none d-md-block">
             <div class="col-12">
                 <nav class="container-fluid navbar fixed-top d-flex justify-content-center top-bar">
-                    <h4 class="mr-3">Home</h4>
+                    <a onclick="app.controller.scrollPage('page', 1)"><h4 class="mr-3">Home</h4></a>
                     <a href="https://ramsey-b.github.io/resume/" target="_blank">
                         <h4 class="mr-3">Resume</h4>
                     </a>
                     <h4 class="mr-3">
-                        <a href="#about">About</a>
+                        <a onclick="app.controller.scrollPage('about', 2)">About</a>
                     </h4>
                     <h4 class="mr-3">
-                        <a href="#projects">Projects</a>
+                        <a onclick="app.controller.scrollPage('projects', 1.25)">Projects</a>
                     </h4>
                     <h4 class="mr-3">
-                        <a href="#education">Education</a>
+                        <a onclick="app.controller.scrollPage('current-projects', 0.75)">Current</a>
                     </h4>
                 </nav>
             </div>
@@ -52,7 +51,7 @@
                 <div class="container-fluid navbar fixed-top top-bar">
                     <div class="row">
                         <div class="col-8 d-flex flex-row">
-                            <h4 class="mr-3">Home</h4>
+                            <a onclick="app.controller.scrollPage('page', 1)"><h4 class="mr-3">Home</h4></a>
                             <a href="https://ramsey-b.github.io/resume/" target="_blank">
                                 <h4 class="mr-3">Resume</h4>
                             </a>
@@ -64,13 +63,13 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <button class="dropdown-item" type="button">
-                                        <a href="#about">About</a>
+                                        <a onclick="app.controller.scrollPage('about', 1.1)">About</a>
                                     </button>
                                     <button class="dropdown-item" type="button">
-                                        <a href="#projects">Projects</a>
+                                        <a onclick="app.controller.scrollPage('projects', 1.1)">Projects</a>
                                     </button>
                                     <button class="dropdown-item" type="button">
-                                        <a href="#education">Education</a>
+                                        <a onclick="app.controller.scrollPage('current-projects', 1.1)">Current</a>
                                     </button>
                                 </div>
                             </div>
@@ -149,10 +148,12 @@
                         <div class="col">
                             <!--carousel-->
                             <div class="jumbotron d-flex align-items-center flex-column" id="jumbotron">
-                                <h1 class="display-4 text-center jumbo-text" style="color: white">Software Developer</h1>
-                                <p class="lead text-center mt-4">
-                                    <a class="btn btn-outline-primary btn-lg" href="#about" role="button">Learn more</a>
-                                </p>
+                                <div class="cover-page d-flex flex-column">
+                                    <h1 class="display-4 text-center jumbo-text" style="color: white">Software Developer</h1>
+                                    <p class="lead text-center mt-4">
+                                        <a class="btn btn-outline-primary btn-lg" href="#about" role="button">Learn more</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -285,7 +286,7 @@
                         <div class="col">
                             <div class="row">
                                 <div class="col text-center">
-                                    <h2>Current Projects</h2>
+                                    <h2 id="current-projects">Current Projects</h2>
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -385,8 +386,7 @@
         </div>
     </div>
     <!--javascript files-->
-    <script src="assests/apps/service.js"></script>
-    <script src="assests/apps/controller.js"></script>
+    <script src="assests/apps/main.js"></script>
     <script src="assests/apps/starfield.js"></script>
     <script src="assests/apps/app.js"></script>
 </body>

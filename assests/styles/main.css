@@ -169,4 +169,19 @@ body{
 
 .dropdown-menu {
     background-color: black;
+    opacity: 0.8;
+}
+
+.cover-page {
+    margin: auto;
+    display: inline;
+    background-image: black;
+}
+
+a {
+    cursor: pointer;
+}
+
+.dropdown-item {
+    color: white;
 }

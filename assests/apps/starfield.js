@@ -5,7 +5,7 @@ function Starfield() {
   this.height = 0;
   this.minVelocity = 15;
   this.maxVelocity = 30;
-  this.stars = 100;
+  this.stars = 200;
   this.intervalId = 0;
 }
 
@@ -16,7 +16,6 @@ Starfield.prototype.initialise = function (div) {
   this.containerDiv = div;
   self.width = $(document).width()
   self.height = $(document).height()
-  debugger
 
   window.addEventListener('resize', function resize(event) {
     self.width = $(document).width()

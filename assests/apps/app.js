@@ -1,5 +1,3 @@
 var app = {
-  controllers: {
-    controller: new Controller
-  }
+  controller: new Controller
 }

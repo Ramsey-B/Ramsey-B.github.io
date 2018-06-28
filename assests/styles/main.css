@@ -77,10 +77,10 @@ a {
 .side-bar {
     background: #E44424;
     color: white;
-    max-height: 110vh;
-    margin-left: 2px;
+    display: inline-block;
     position:relative;
     border: 1px solid;
+    margin: auto;
 }
 #languages {
     margin: 2vh;
@@ -165,4 +165,8 @@ body{
 
 .page-content {
     z-index: 0;
+}
+
+.dropdown-menu {
+    background-color: black;
 }

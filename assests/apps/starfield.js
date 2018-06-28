@@ -16,10 +16,11 @@ Starfield.prototype.initialise = function (div) {
   this.containerDiv = div;
   self.width = $(document).width()
   self.height = $(document).height()
+  debugger
 
   window.addEventListener('resize', function resize(event) {
     self.width = $(document).width()
-    self.height = $(document).height()
+    self.height = $(document).height() 
     self.canvas.width = self.width;
     self.canvas.height = self.width;
     self.draw();

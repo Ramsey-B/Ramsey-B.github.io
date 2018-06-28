@@ -23,10 +23,16 @@ function Controller() {
     document.getElementById(id).innerHTML = template
   }
 
-  drawLang(service.languages(), "languages")
-  drawFrame(service.frameworks(), "frameworks")
-  drawLang(service.languages(), "small-languages")
-  drawFrame(service.frameworks(), "small-frameworks")
-  
+  // drawLang(service.languages(), "languages")
+  // drawFrame(service.frameworks(), "frameworks")
+  // drawLang(service.languages(), "small-languages")
+  // drawFrame(service.frameworks(), "small-frameworks")
+  var container = document.getElementById('page');
+  $(window).on('load', function() {
+    var starfield = new Starfield();
+    starfield.initialise(container);
+    starfield.stars = 2000;
+    starfield.start();
+   })
 }
 

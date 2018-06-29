@@ -16,15 +16,15 @@ Starfield.prototype.initialise = function (div) {
   this.containerDiv = div;
   self.width = $(document).width()
   self.height = this.width > 576 ? $(document).height() : 2942
-  debugger
-
-  window.addEventListener('resize', function resize(event) {
+  
+  window.onresize = function resize(event) {
+    debugger
     self.width = $(document).width()
     self.height = self.width > 576 ? $(document).height() : 2942
     self.canvas.width = self.width;
     self.canvas.height = self.width;
     self.draw();
-  });
+  }
 
   //	Create the canvas.
   var canvas = document.createElement('canvas');

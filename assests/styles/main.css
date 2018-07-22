@@ -185,6 +185,6 @@ a {
     color: white;
 }
 
-.gallery {
-    height: 40vh;
+.carousel-item {
+    height: 50vh;
 }
